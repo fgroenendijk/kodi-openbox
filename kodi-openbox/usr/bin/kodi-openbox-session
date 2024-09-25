@@ -92,6 +92,10 @@ fi
 		then
 			/usr/lib/arm-linux-gnueabihf/kodi/kodi.bin &
 			kpid=$!
+		elif [ -f /usr/lib/x86_64-linux-gnu/kodi/kodi-x11 ]
+		then
+			/usr/lib/x86_64-linux-gnu/kodi/kodi-x11 &
+			kpid=$!
 		else
 			kodi &
 			kpid=$!
